@@ -105,4 +105,18 @@
 
 ![image](https://github.com/shinho123/Data-mining-project---stroke-prediction/assets/105840783/4a2b4cd1-c7f1-4801-a348-b5a1db137e9d)
 
+# Conclusion
 
+### 모델
+* 모델의 관점에서 동일한 3,760개의 test_set으로 분류를 진행한 결과 ① Random Forest, ② Decision Tree Classifier, ③ Logistic Regression 순서로 성능이 우수함
+
+### 해석
+* Logistic Regression :  age(나이), hypertension(고혈압), avg_glucose_level(혈액의 평균 포도당 수치), smoking_status(흡연 여부)
+* Decision Tree Classifier : age(나이), bmi(체질량 지수), avg_glucose_level(혈액의 평균 포도당 수치), smoking_status(흡연 여부)
+* Random Forest : age(나이), bmi(체질량 지수), avg_glucose_level(혈액의 평균 포도당 수치), smoking_status(흡연 여부)
+
+→ 모델에서 공통적으로 age, avg_glucose_level, bmi가 중요한 변수로 도출되었으며, 나이, 포도당 수치, 체질량 지수와 같이 생활습관과 관련된 변수들이 뇌졸증 발생 여부와 밀접하게 관련됨을 확인하였으며, 이외에도 공통으로 확인된 생활습관 변수로는 흡연 여부가 존재
+
+→ EDA에서는 지병과 관련된 hypertension(고혈압), heart_disease(심장병)의 변수가 중요 변수로 선택되었으나, 해당 데이터 셋에서는 상대적으로 뇌졸증과 큰 관련성이 없음
+
+→ 결론적으로 뇌졸증 발생 여부의 경우 환자가 가지고 있는 지병의 영향보다는 생활습관이나 자연현상과 요인들이 밀접한 관련성이 있음
